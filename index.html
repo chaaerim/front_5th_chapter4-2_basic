@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home - Tech Shop</title>
     <link
+      rel="preload"
       href="https://fonts.googleapis.com/css?family=Heebo:300,400,600,700&display=swap"
-      rel="stylesheet"
+      onload="this.onload=null;this.rel='stylesheet'"
     />
     <link rel="stylesheet" href="/css/styles.css" />
     <!-- <link rel="stylesheet" type="text/css" href="/css/slick.css"/> -->
@@ -86,45 +87,57 @@
         <!-- Desktop -->
         <source
           class="desktop"
-          srcset="images/Hero_Desktop.webp"
+          srcset="
+            https://chaaerim-s3.s3.ap-northeast-2.amazonaws.com/Hero_Desktop.webp?=img.src&width=200&height=100
+          "
           type="image/webp"
           media="(min-width: 961px)"
         />
         <source
           class="desktop"
-          srcset="images/Hero_Desktop.jpg"
+          srcset="
+            https://chaaerim-s3.s3.ap-northeast-2.amazonaws.com/Hero_Desktop.jpg?=img.src&width=200&height=100
+          "
           type="image/jpeg"
           media="(min-width: 961px)"
         />
         <!-- Tablet -->
         <source
           class="tablet"
-          srcset="images/Hero_Tablet.webp"
+          srcset="
+            https://chaaerim-s3.s3.ap-northeast-2.amazonaws.com/Hero_Tablet.webp?=img.src&width=200&height=100
+          "
           type="image/webp"
           media="(min-width: 577px) and (max-width: 960px)"
         />
         <source
           class="tablet"
-          srcset="images/Hero_Tablet.jpg"
+          srcset="
+            https://chaaerim-s3.s3.ap-northeast-2.amazonaws.com/Hero_Tablet.jpg?=img.src&width=200&height=100
+          "
           type="image/jpeg"
           media="(min-width: 577px) and (max-width: 960px)"
         />
         <!-- Mobile -->
         <source
           class="mobile"
-          srcset="images/Hero_Mobile.webp"
+          srcset="
+            https://chaaerim-s3.s3.ap-northeast-2.amazonaws.com/Hero_Mobile.webp?=img.src&width=200&height=100
+          "
           type="image/webp"
           media="(max-width: 576px)"
         />
         <source
           class="mobile"
-          srcset="images/Hero_Mobile.jpg"
+          srcset="
+            https://chaaerim-s3.s3.ap-northeast-2.amazonaws.com/Hero_Mobile.jpg?=img.src&width=200&height=100
+          "
           type="image/jpeg"
           media="(max-width: 576px)"
         />
         <!-- Fallback -->
         <img
-          src="images/Hero_Desktop.jpg"
+          src="https://chaaerim-s3.s3.ap-northeast-2.amazonaws.com/Hero_Desktop.jpg?=img.src&width=200&height=100"
           alt="Hero Image"
           width="1440"
           height="600"
@@ -154,8 +167,16 @@
           <div class="product new">
             <div class="product-picture">
               <picture loading="lazy">
-                <source srcset="images/vr1.webp" type="image/webp" />
-                <img src="images/vr1.jpg" alt="product: Penom Case" />
+                <source
+                  srcset="
+                    https://chaaerim-s3.s3.ap-northeast-2.amazonaws.com/vr1.webp?=img.src&width=100&height=100
+                  "
+                  type="image/webp"
+                />
+                <img
+                  src="https://chaaerim-s3.s3.ap-northeast-2.amazonaws.com/vr1.jpg?=img.src&width=100&height=100"
+                  alt="product: Penom Case"
+                />
               </picture>
             </div>
             <div class="product-info">
@@ -171,9 +192,14 @@
           <div class="product new">
             <div class="product-picture">
               <picture loading="lazy">
-                <source srcset="images/vr2.webp" type="image/webp" />
+                <source
+                  srcset="
+                    https://chaaerim-s3.s3.ap-northeast-2.amazonaws.com/vr2.webp?=img.src&width=100&height=100
+                  "
+                  type="image/webp"
+                />
                 <img
-                  src="images/vr2.jpg"
+                  src="https://chaaerim-s3.s3.ap-northeast-2.amazonaws.com/vr2.jpg?=img.src&width=100&height=100"
                   alt="product: Noise Cancelling Headphone"
                 />
               </picture>
@@ -191,9 +217,14 @@
           <div class="product">
             <div class="product-picture">
               <picture loading="lazy">
-                <source srcset="images/vr3.webp" type="image/webp" />
+                <source
+                  srcset="
+                    https://chaaerim-s3.s3.ap-northeast-2.amazonaws.com/vr3.webp?=img.src&width=100&height=100
+                  "
+                  type="image/webp"
+                />
                 <img
-                  src="images/vr3.jpg"
+                  src="https://chaaerim-s3.s3.ap-northeast-2.amazonaws.com/vr3.jpg?=img.src&width=100&height=100"
                   alt="product: Canon Digital SLR EOS Rebel T6"
                 />
               </picture>
